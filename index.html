@@ -9,182 +9,162 @@
     <title>Docut</title>
 </head>
 <body>
-
 <!-- home page--------------------------------------------------------- -->
-
-    <!-- <header>
-        <div class="nav-bar">
-            <p class="nav-title">Coding Challenge</p>
-            <button name="start-quiz" class="nav-button">Start Quiz</button>
-            <button name="high-scores" class="nav-button">High Scores</button>  
-        </div>
-    </header>
-    <main>
-        <div class="heading-container">
-            <p class="heading">Ready to get Quizzed?</p>
-        </div>
-        <div class="content-container">
-            <ul class="content-list">
-                <li>This quiz will test you on the fundamentals of HTML, CSS and JavaScript</li>
-                <li>There are 20 questions with a time limit for each question</li>
-                <li>Guess 18/20 questions correctly and you receive a free gift</li>
-            </ul>
-            <p class="content-footer">Select "Start Quiz" above to begin</p>
-        </div>
-    </main> -->
-
-<!-- Instructions Page -->
-    <!-- <header>
-        <div class="nav-bar">
-            <p class="nav-title">Coding Challenge</p>
-            <button name="next" class="nav-button">Next</button>
-            <button name="cancel-quiz" class="nav-button">Cancel Quiz</button>  
-        </div>
-    </header>
-    <main>
-        <div class="heading-container"> 
-            <p class = "heading">Instructions</p>
-        </div>
-        <div class="content-container">
-            <ul class="content-list">
-                <li>Read each multiple choice question, select an answer, and select Submit</li>
-                <li>You cannot repeat a question</li>
-                <li>The time limit for each question is 1 minute</li>
-            </ul>
-            <p class="content-footer">Select Next</p>
-            <p class="content-footer">Good LUCK!</p>
-        </div>
-    </main>
-
-<!-- Question Page Template ----------------------------------------------------------->
-
-
-    <header>
-        <div class="nav-bar">
-            <p class="nav-title">Coding Challenge</p>
-            <button name="next" class="nav-button">Next</button>
-            <button name="cancel-quiz" class="nav-button">Cancel Quiz</button>  
-        </div>
-    </header>
-    <main>
-        <div class="heading-container"> 
-            <p class = "heading">Question 1 of 20</p>
-        </div>
-        <div class="content-container">
-            <p class="timer">Time Left: 50 seconds</p>
-            <p class="question">
-                Online Grammar and Writing Checker To Help You Deliver 
-                Impeccable, Mistake-free Writing. Grammarly Has a Tool For Just About Every 
-                Kind Of Writing You Do. Try It Out For Yourself! Easily Improve Any Text. 
-                Improve Word Choice. Find and Add Sources Fast.
-            </p>
-
-            <ul class="content-list-ns">
-                <li>
-                    <input type="checkbox" id="option1" name="option1">
-                    <label for="option1">Option1</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="option2" name="option2">
-                    <label for="option1">Option2</label>   
-                </li>
-                <li>
-                    <input type="checkbox" id="option3" name="option3">
-                    <label for="option1">Option3</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="option4" name="option4">
-                    <label for="option1">Option4</label>
-                </li>
-            </ul>
-            <button class="content-footer-button" type="button">Submit</button>
-        </div>
-    </main>
-
-
-
-
-<!-- finish page --------------------------------------------------------- -->
-
-
-    <!-- <header>
-        <div class="nav-bar">
-            <p class="nav-title">Coding Challenge</p>
-            <button name="retry" class="nav-button">Retry</button>
-        </div>
-    </header>
-    <main>
-        <div class="heading-container"> 
-            <p class = "heading">You're Done!</p>
-        </div>
-        <div class="content-container">
-            <div class="score-container">
-                <p class="score">Final Score:</p>
-                <label for="input-text">Enter your initials to save your score!:</label>
-                <input type="text" maxlength="2" class="input-text" 
-                 size="2" id="input-text">
-
+    <page class="home-page">
+        <header>
+            <div class="nav-bar">
+                <p class="nav-title">Coding Challenge</p>
+                <button id="start-quiz" class="nav-button">Start Quiz</button>
+                <button id="high-scores" class="nav-button">High Scores</button>  
             </div>
-            <div class="results-container">
-                <ul class="results-list" id="results-list-left">
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                </ul>
-                <ul class="results-list" id="results-list-right">
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                    <li>Question #1: Correct</li>
-                </ul>
+        </header>
+        <main>
+            <div class="heading-container">
+                <p class="heading">Ready to get Quizzed?</p>
             </div>
-            
-            <button class="content-footer-button" type="button">Submit</button>
-        </div>
-    </main> -->
+            <div class="content-container">
+                <ul class="content-list">
+                    <li>This quiz will test you on the fundamentals of HTML, CSS and JavaScript</li>
+                    <li>There are 20 questions with a time limit for each question</li>
+                    <li>Guess 18/20 questions correctly and you receive a free gift</li>
+                </ul>
+                <p class="content-footer">Select "Start Quiz" above to begin</p>
+            </div>
+        </main>
 
-<!-- high scores page ----------------------------------------------------------->
+    </page>
+<!-- Instruction Page  -->
+    <page class="instr-page">
+        <header>
+            <div class="nav-bar">
+                <p class="nav-title">Coding Challenge</p>
+                <button id="next-instr" class="nav-button">Next</button>
+                <button id="cancel-quiz-instr" class="nav-button">Cancel Quiz</button>  
+            </div>
+        </header>
+        <main>
+            <div class="heading-container"> 
+                <p class = "heading">Instructions</p>
+            </div>
+            <div class="content-container">
+                <ul class="content-list">
+                    <li>Read each multiple choice question, select an answer, and select Submit</li>
+                    <li>You cannot repeat a question</li>
+                    <li>The time limit for each question is 1 minute</li>
+                </ul>
+                <p class="content-footer">Select Next</p>
+                <p class="content-footer">Good LUCK!</p>
+            </div>
+        </main>
+    </page>
+    <page class="question-page">
+        <header>
+            <div class="nav-bar">
+                <p class="nav-title">Coding Challenge</p>
+                <button id="cancel-quiz-quest" class="nav-button">Cancel Quiz</button>  
+            </div>
+        </header>
+        <main>
+            <div class="heading-container"> 
+                <p class = "heading">Question 1 of 20</p>
+            </div>
+            <div class="content-container">
+                <p class="timer">Time Left: <span id="time">50</span> seconds</p>
+                <p class="question">
+                  This is a question
+                </p>
+    
+                <ul class="content-list-ns">
+                    <li>
+                        <input type="checkbox" id="option1" name="option1">
+                        <label for="option1" id="1-label">Option1</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="option2" name="option2">
+                        <label for="option2" id = "2-label">Option2</label>   
+                    </li>
+                    <li>
+                        <input type="checkbox" id="option3" name="option3">
+                        <label for="option3" id = "3-label">Option3</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="option4" name="option4">
+                        <label for="option4" id = "4-label">Option4</label>
+                    </li>
+                </ul>
+                <button class="content-footer-button" id="submit-question" type="button">Submit</button>
+            </div>
+        </main>    
+    </page>
 
+    <page class="finish-page">
+        <header>
+            <div class="nav-bar">
+                <p class="nav-title">Coding Challenge</p>
+                <button id="retry-finish-page" class="nav-button">Retry</button>
+            </div>
+        </header>
+        <main>
+            <div class="heading-container"> 
+                <p class = "heading">You're Done!</p>
+            </div>
+            <div class="content-container">
+                <div class="score-container">
+                    <p class="score">Final Score:</p>
+                    <label for="input-text">Enter your initials to save your score!:</label>
+                    <input type="text" maxlength="2" class="input-text" 
+                     size="2" id="input-text">
+    
+                </div>
+                <div class="results-container">
+                    <ul class="results-list" id="results-list-left">
+                        <li id="res1">Question #1: Correct</li>
+                        <li id="res2">Question #1: Correct</li>
+                        <li id="res3">Question #1: Correct</li>
+                        <li id="res4">Question #1: Correct</li>
+                        <li id="res5">Question #1: Correct</li>
+                    </ul>
+                    <ul class="results-list" id="results-list-right">
+                        <li id="res6">Question #1: Correct</li>
+                        <li id="res7">Question #1: Correct</li>
+                        <li id="res8">Question #1: Correct</li>
+                        <li id="res9">Question #1: Correct</li>
+                        <li id="res10">Question #1: Correct</li>
+                    </ul>
+                </div>
+                
+                <button class="content-footer-button" id="submit-score" type="button">Submit</button>
+            </div>
+        </main>
+    </page>
 
-<!-- <header>
-    <div class="nav-bar">
-        <p class="nav-title">Coding Challenge</p>
-        <button name="retry" class="nav-button">Retry</button>
-    </div>
-</header>
-<main>
-    <div class="heading-container"> 
-        <p class = "heading">High Scores</p>
-    </div>
-    <div class="content-container">
-        <table class="high-score-table">
-            <tr id="table-headings">
-                <th>Ranking</th>
-                <th>Initials</th>
-                <th>Score</th>
-            </tr>
-            <tr>
-                <td>#1</td>
-                <td>CC</td>
-                <td>20/20</td>
-            </tr>
-        </table>
-    </div>
-</main> -->
-
+    <page class="high-scores-page">
+        <header>
+            <div class="nav-bar">
+                <p class="nav-title">Coding Challenge</p>
+                <button id="retry-scores-page" class="nav-button">Retry</button>
+            </div>
+        </header>
+        <main>
+            <div class="heading-container"> 
+                <p class = "heading">High Scores</p>
+            </div>
+            <div class="content-container">
+                <table class="high-score-table">
+                    <tr id="table-headings">
+                        <th>Ranking</th>
+                        <th>Initials</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>#1</td>
+                        <td>CC</td>
+                        <td>20/20</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </page>
 
 <!-- Static Page Footer ----------------------------------------------------------->
     <footer>
@@ -192,5 +172,7 @@
             <p>Prepared by Cristino Castro for UC Irvine Coding Bootcamp 2023</p>
         </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
+
